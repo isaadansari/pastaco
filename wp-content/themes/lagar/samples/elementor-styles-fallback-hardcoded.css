@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'Alata';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://lagar.vamtam.com/wp-content/uploads/2020/03/Alata-Regular.woff') format('woff');
+}
+
+html {
+	background: #f9f8f4;
+}
+
+body {
+	font-size: 20px;
+	line-height: 28px;
+}

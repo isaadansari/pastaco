@@ -1,0 +1,34 @@
+/* Scroll to Top */
+#scroll-to-top {
+	position: fixed;
+	z-index: 200;
+	opacity: 0;
+	bottom: 0;
+	right: 0;
+	width: 70px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 0px;
+	background: var(--vamtam-accent-color-8);
+	fill: var(--vamtam-accent-color-3);
+	border: 0px solid var(--vamtam-accent-color-5);
+	text-shadow: none;
+	border-radius: var( --vamtam-border-radius-oval );
+	border-top-left-radius: 3px;
+	transition: opacity .3s ease-out, background .3s ease-out, border-color .3s ease-out, transform .3s ease-out;
+	backface-visibility: hidden;
+	transform: scale3d( 0, 0, 0 );
+	text-align: center;
+	cursor: pointer;
+
+	svg {
+		pointer-events: none;
+		width: 16px;
+		height: 16px;
+	}
+
+	&:hover {
+		background: var(--vamtam-accent-color-3);
+		fill: var( --vamtam-accent-color-1-hc );
+	}
+}
