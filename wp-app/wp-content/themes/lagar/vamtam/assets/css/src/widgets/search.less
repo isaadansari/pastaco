@@ -1,0 +1,74 @@
+.widget_search .searchform,
+.widget_product_search  .woocommerce-product-search {
+	@size: 55px;
+	position: relative;
+
+	display: block;
+	padding: 0 !important;
+	max-width: 100% !important;
+	width: 100%;
+	white-space: nowrap;
+
+	&:not( :first-child ) {
+		margin-top: 20px;
+	}
+
+	input[name="s"] {
+		width: 100% !important;
+		height: ( @size - 10px );
+
+		padding: 5px 65px 5px 20px;
+
+		appearance: none;
+
+		&::clear {
+			display: none;
+		}
+
+		&::-webkit-search-decoration,
+		&::-webkit-search-cancel-button,
+		&::-webkit-search-results-button,
+		&::-webkit-search-results-decoration {
+			display: none;
+		}
+	}
+
+	[type="submit"] {
+		position: absolute;
+		z-index: 5;
+		padding: 0px;
+		width: ( @size + 5px );
+		height: ( @size - 10px );
+		background: transparent;
+		box-shadow: none;
+		font-size: 0 !important;
+		border: 1px solid transparent;
+
+		top: 0px;
+		right: 0px;
+
+		color: transparent;
+	}
+
+	&:before {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 6;
+		padding: 0 20px;
+		margin: 0;
+		height: ( @size - 10px );
+		content: icon( vamtam-theme-search-clean);
+		font: normal 20px/44px vamtam-theme;
+		cursor: pointer;
+		text-align: center;
+		border: none;
+		transition: all .3s;
+		pointer-events: none;
+	}
+
+	&:hover:before {
+		color: var( --vamtam-accent-color-1 );
+	}
+}
+

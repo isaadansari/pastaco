@@ -1,0 +1,117 @@
+@icon-height: 20px;
+@icon-offset: 0px;
+
+.loop-wrapper {
+	&.regular {
+		margin: 0 -30px -30px -30px;
+
+		.list-item {
+			width: 50%;
+			box-sizing: border-box;
+			padding: 0 30px 0 30px;
+			margin-bottom: 30px !important;
+
+			.vamtam-meta-author,
+			.vamtam-meta-date,
+			.vamtam-meta-comments,
+			.vamtam-meta-tax {
+				margin-right: 20px;
+				font-weight: 500;
+			}
+
+			&:first-child {
+				.post-article .post-content-outer {
+					&.vamtam-full-width-thumb {
+						.vamtam-meta-tax.the-categories {
+							top: 0;
+						}
+					}
+				}
+			}
+
+			.post-article .post-content-outer {
+				&.vamtam-full-width-thumb {
+					.vamtam-meta-tax.the-categories {
+						position: absolute;
+						padding: 15px;
+						top: 45px;
+					}
+				}
+			}
+
+			.post-content-outer {
+				box-sizing: border-box;
+				padding: 23px 0;
+
+				.post-meta {
+					width: 100%;
+					margin-top: 10px;
+					margin-bottom: 0;
+				}
+
+				.post-content {
+					font-size: 16px;
+					line-height: 24px;
+				}
+			}
+
+			header h3 {
+				margin: 0 0 10px 0;
+				overflow-wrap: break-word;
+			}
+
+			.media-inner {
+				> div {
+					margin: 0;
+				}
+
+				.wp-post-image {
+					display: block;
+				}
+			}
+
+			.post-row {
+				.media-inner {
+					background-color: var( --vamtam-accent-color-5 );
+					transition: background .4s ease-out;
+
+					&.vamtam-has-post-thumb-shape {
+						> a {
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
+						}
+					}
+				}
+
+				.navigation:last-child,
+				.post-actions-wrapper:last-child {
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+
+				.vamtam-meta-date {
+					color: var( --vamtam-accent-color-2 );
+					font-family: var(--vamtam-h6-font-family);
+					font-size: 14px;
+					font-weight: 28px;;
+				}
+			}
+
+			.post-media {
+				margin-bottom: 0;
+				max-width: none;
+				padding-right: 0;
+				width: 100%;
+			}
+		}
+
+		.sticky {
+			.post-row {
+				border: 1px solid var( --vamtam-accent-color-1 );
+				padding: 2em;
+			}
+		}
+	}
+}

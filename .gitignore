@@ -1,1 +1,4 @@
 .env
+wp-app/wp-includes
+wp-app/wp-admin
+wp-app/wp-content/plugins
